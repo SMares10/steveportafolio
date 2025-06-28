@@ -5,8 +5,14 @@ const prisma = new PrismaClient()
 async function main() {
  await prisma.projects.createMany({
   data: [
-   { name: 'Ania'},
-   { name: 'Ana'},
+   { 
+    name: 'Introduction',
+    description: 'using Next.js'
+},
+   { 
+    name: 'My Portfolio',
+    description: 'using Prisma + Neon',
+},
   ],
  })
 }

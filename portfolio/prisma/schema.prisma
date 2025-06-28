@@ -25,5 +25,6 @@ model User {
 model Projects {
   id        Int      @id @default(autoincrement())
   name      String
+  description String
   createdAt DateTime @default(now())
 }
